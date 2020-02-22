@@ -73,7 +73,9 @@ class PathFind:
     @staticmethod
     def isce_clean_list():
         cleanlist = []
-        cleanlist.append(['stack',  'misreg', 'orbits', 'coarse_interferograms', 'ESD',
+        #cleanlist.append(['stack',  'misreg', 'orbits', 'coarse_interferograms', 'ESD',
+        #                  'interferograms', 'slaves'])
+        cleanlist.append(['stack',  'misreg', 'coarse_interferograms', 'ESD',
                           'interferograms', 'slaves'])
         cleanlist.append(['merged', 'master', 'coreg_slaves', 'baselines', 'geom_master'])
         cleanlist.append(['SLC'])
