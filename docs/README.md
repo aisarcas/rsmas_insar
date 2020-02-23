@@ -95,10 +95,18 @@ download_asfserial.py $SAMPLESDIR/GalapagosSenDT128.template --delta_lat 0.1
 Downaloading DEM from the USGS
 * [Trouble shooting](./download_dem_troubleshooting.md)
 
+if you cann't download dem, please check ~/accounts/netrc
+
 ### 4.3. Process interferograms: --step ifgrams
 
 ```
 create_runfiles
 execute_run_files.py ....
 ```
-please check your downloaded SLC zip files!!!
+if you received this message: 
+```
+raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+```
+please check your SLC zip file. 
+This trouble is caused by imcompleted downloaded zip file.
