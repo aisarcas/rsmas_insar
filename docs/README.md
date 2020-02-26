@@ -110,3 +110,19 @@ zipfile.BadZipFile: File is not a zip file
 ```
 please check your SLC zip file. 
 This trouble is caused by imcompleted downloaded zip file.
+
+if you received this message: 
+```
+=>>PBS: job killed: walltime 28839 exceeded limit 28800
+```
+please check your ~/rsmas_insar/minsar/defaults/job_defaults.cfg
+and modify the following items:
+```
+[DEFAULT]
+walltime = 12:00
+
+[execute_runfiles]
+walltime = 12:00
+```
+
+This trouble is caused by processing time for unpack_slc_topo exceeded given limition.
