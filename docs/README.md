@@ -103,7 +103,7 @@ if you cann't download dem, please check ~/accounts/netrc
 create_runfiles
 execute_run_files.py ....
 ```
-##### trouble about "BadZipFile": 
+#### *trouble about "BadZipFile": 
 ```
 raise BadZipFile("File is not a zip file")
 zipfile.BadZipFile: File is not a zip file
@@ -111,7 +111,7 @@ zipfile.BadZipFile: File is not a zip file
 please check your SLC zip file. 
 This trouble is caused by imcompleted downloaded zip file.
 
-##### trouble abou "walltime ... exceeded limit": 
+#### *trouble abou "walltime ... exceeded limit": 
 ```
 =>>PBS: job killed: walltime 28839 exceeded limit 28800
 ```
@@ -127,7 +127,7 @@ walltime = 12:00
 
 This trouble is caused by processing time for unpack_slc_topo exceeded given limition.
 
-#### trouble about "PyAPS ZeroDivisionError"
+#### *trouble about "PyAPS ZeroDivisionError"
 ```
 File "/home/python/MintPy/mintpy/utils/ptime.py", line 296, in update_amount
 percentDone = (diffFromMin / np.float(self.span)) * 100.0
