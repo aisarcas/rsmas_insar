@@ -103,7 +103,7 @@ if you cann't download dem, please check ~/accounts/netrc
 create_runfiles
 execute_run_files.py ....
 ```
-if you received this message: 
+##### trouble about "BadZipFile": 
 ```
 raise BadZipFile("File is not a zip file")
 zipfile.BadZipFile: File is not a zip file
@@ -111,7 +111,7 @@ zipfile.BadZipFile: File is not a zip file
 please check your SLC zip file. 
 This trouble is caused by imcompleted downloaded zip file.
 
-if you received this message: 
+##### trouble abou "walltime ... exceeded limit": 
 ```
 =>>PBS: job killed: walltime 28839 exceeded limit 28800
 ```
@@ -126,3 +126,19 @@ walltime = 12:00
 ```
 
 This trouble is caused by processing time for unpack_slc_topo exceeded given limition.
+
+#### trouble about "PyAPS ZeroDivisionError"
+```
+File "/home/python/MintPy/mintpy/utils/ptime.py", line 296, in update_amount
+percentDone = (diffFromMin / np.float(self.span)) * 100.0
+ZeroDivisionError: float division by zero
+```
+please check your ~/rsmas_insar/3rdparty/PyAPS/pyaps3/model.cfg, make sure that 
+your user id (UID) and your personal API Key have been added to the model.cfg as bellow.
+```
+#####key for ECMWF in Climate Data Store Application Program Interface
+#Get it from https://retostauffer.org/code/Download-ERA5/
+[CDS]
+key = 12345:abcdefghij-134-abcdefgadf-82391b9d3f
+```
+More information can be found on https://github.com/yunjunz/pyaps3.
