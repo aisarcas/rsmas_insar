@@ -144,4 +144,4 @@ key = 12345:abcdefghij-134-abcdefgadf-82391b9d3f
 More information can be found on https://github.com/yunjunz/pyaps3.
 
 #### 4.3.4. path of ifgrams stored 
-path of ifgrams stored should check ([see default path])(../sources/MintPy/mintpy/defaults/auto_path.py)
+path of ifgrams stored should check [see default path](../sources/MintPy/mintpy/defaults/auto_path.py)
