@@ -13,7 +13,7 @@ git clone https://github.com/geodesymiami/accounts.git ~/accounts ;
 * Go to the area where you want to install the code:
 
 ```
-cd ~/test/test1
+cd ~
 ```
 
 * Install the code using the commands below (you need a reasonable recent git version (the default on pegasus is too old, get a [local version](./install_git.md), or use an old rsmas_insar version). 
