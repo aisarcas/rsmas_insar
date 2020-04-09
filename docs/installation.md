@@ -22,7 +22,7 @@ cd ~
 bash
 [ -f ~/local_git/miniconda3/bin/git ] && alias git=~/local_git/miniconda3/bin/git	
 
-git clone https://github.com/geodesymiami/rsmas_insar.git ;
+git clone https://github.com/aisarcas/rsmas_insar.git ;
 cd rsmas_insar
 
 git clone https://github.com/insarlab/MintPy.git sources/MintPy ;
